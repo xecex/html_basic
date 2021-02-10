@@ -1,0 +1,91 @@
+<!-- ブログのようなサイトのマークアップ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- サイトのタイトル -->
+
+    <header>
+
+        <!--
+            ロゴはimgタグで書かれる
+            src属性にはimgのpassを指定
+           「unsplash source」はランダムなイメージを提供してくれる便利ツール
+            縦横50x50の画像を表示
+        -->
+
+        <img src="https://source.unsplash.com/random/50x50" alt="">
+        <h1>サイトのタイトルです</h1>
+
+        <!--
+            navタグはグローバルなサイトのナビゲーションを表すのによく使われる
+            いろいろなページに遷移するために使用される
+        -->
+
+        <nav>
+            <ul>
+
+                <!-- リンクタグ -->
+
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="#">アバウト</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- サイトの主要なコンテンツを表す -->
+
+    <main>
+
+        <!-- articleタグはフォーラムの投稿、雑誌や新聞の記事、ブログの記事などが含まれる -->
+
+        <article>
+
+            <!-- 記事のヘッダーに使われることもある -->
+
+            <header>
+                <h1>記事のタイトルです</h1>
+                <h2>記事の副タイトルです</h2>
+
+                <!-- timeタグは記事の執筆時に使用 -->
+                <time datetime="2021-02-10">2021-02-10</time>
+            </header>
+
+            <div>
+
+                <!-- p（パラグラフ）タグは記事の内容に使われる -->
+
+                <p>
+                    <!-- Loremと打つと長めのダミーテキストを書いてくれる -->
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel qui ratione voluptatem! Dolores quas alias eos aliquam et doloribus dolorum, aperiam dignissimos similique perspiciatis, magnam laboriosam! Magnam, laborum impedit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel qui ratione voluptatem! Dolores quas alias eos aliquam et doloribus dolorum, aperiam dignissimos similique perspiciatis, magnam laboriosam! Magnam, laborum impedit.
+                </p>
+
+            </div>
+
+        </article>
+    </main>
+
+    <!-- サイトの補足的な情報を表す -->
+
+    <footer>
+
+        <!-- smallタグはHTML5において、表示上のスタイルとは関係なく、この要素は著作権表示や法的表記のような、注釈や小さく表示される文章を表すために再提案された -->
+
+        <small>
+            @ 2021 example.com
+        </small>
+    </footer>
+</body>
+</html>
